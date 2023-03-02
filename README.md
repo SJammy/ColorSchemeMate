@@ -1,1 +1,1 @@
-# ColourSchemeMate
+# ColorSchemeMate

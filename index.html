@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/color-changer.css" />
+
+    <title>Colour Scheme Mate Demo</title>
+    <!-- <script src="https://kit.fontawesome.com/255814af14.js" crossorigin="anonymous"></script> -->
+  </head>
+
+  <body>
+    <!-- Instructions for Use -->
+    <section>
+      <div id="overlay">
+        <h1>Instructions for Use</h1>
+        <div class="info-panels">
+          <div id="info-panel-left" class="info-panel">
+            <h2>Choose Colour</h2>
+            <p>Click a Colour Box to open the Colour Picker.</p>
+            <p>Select the desired colour to test.</p>
+            <label for="colorPicker2" class="colorPickers-label"
+              >Colour Box - Demo only (not implemented)</label>
+            <div class="colorPicker-box">
+              <input
+                type="color"
+                id="colorPickerExample"
+                class="colorPickers"
+              />
+            </div>
+            <h2>Implement Chosen Colour</h2>
+            <p>Press the 'Esc' key, or close the Colour Picker.</p>
+          </div>
+          <div id="info-panel-right" class="info-panel">
+            <h2>Save</h2>
+            Save & Download a PDF with your customised colour scheme's hex
+            values.
+            <h2>Reset</h2>
+            Return to the original colour scheme.
+            <h2>Close</h2>
+            Hide the Colour Scheme section. A button will appear atthe foot of
+            the page to re-open the Colour Scheme section.
+          </div>
+        </div>
+        <button id="color-picker-info-close">Got it</button>
+      </div>
+    </section>
+
+    <section id="section-top">
+      <div class="container colorschememate-btns">
+        <!-- 4 Buttons -->
+        <!-- Info -->
+        <div class="colorPicker-box">
+          <div id="color-picker-info-open" class="colorschememate-btn-img">
+            <!-- <img src="https://img.icons8.com/ios/50/null/clipboard.png" /> -->
+            <img src="https://img.icons8.com/ios/50/null/info--v1.png" />
+          </div>
+          <label for="color-picker-info" class="colorPickers-label">Info</label>
+        </div>
+
+        <!-- Save -->
+        <div class="colorPicker-box">
+          <div id="color-picker-save" class="colorschememate-btn-img">
+            <!-- <img src="https://img.icons8.com/ios/50/null/clipboard.png" /> -->
+            <img src="https://img.icons8.com/wired/64/null/pdf.png" />
+          </div>
+          <label for="color-picker-save" class="colorPickers-label">Save</label>
+        </div>
+
+        <!-- Reset -->
+        <div class="colorPicker-box">
+          <div id="color-picker-reset" class="colorschememate-btn-img">
+            <img src="https://img.icons8.com/ios/50/null/reboot.png" />
+          </div>
+          <label for="color-picker-reset" class="colorPickers-label"
+            >Reset</label
+          >
+        </div>
+
+        <!-- Hide/Close -->
+        <div class="colorPicker-box">
+          <div id="color-picker-close" class="colorschememate-btn-img">
+            <img
+              src="https://img.icons8.com/ios/50/null/close-window--v1.png"
+            />
+          </div>
+          <label for="color-picker-close" class="colorPickers-label"
+            >Close</label
+          >
+        </div>
+      </div>
+
+      <!-- Color Picker Inputs -->
+      <div class="color-inputs slide-in">
+        <div class="colorPicker-box">
+          <input type="color" id="colorPicker0" class="colorPickers" />
+          <label for="colorPicker0" class="colorPickers-label"
+            >Header Background</label
+          >
+        </div>
+
+        <div class="colorPicker-box">
+          <input type="color" id="colorPicker1" class="colorPickers" />
+          <label for="colorPicker1" class="colorPickers-label"
+            >Header Title</label
+          >
+        </div>
+
+        <div class="colorPicker-box">
+          <input type="color" id="colorPicker2" class="colorPickers" />
+          <label for="colorPicker2" class="colorPickers-label"
+            >Headings, Buttons +</label
+          >
+        </div>
+
+        <div class="colorPicker-box">
+          <input type="color" id="colorPicker3" class="colorPickers" />
+          <label for="colorPicker3" class="colorPickers-label"
+            >Page Background</label
+          >
+        </div>
+
+        <div class="colorPicker-box">
+          <input type="color" id="colorPicker4" class="colorPickers" />
+          <label for="colorPicker4" class="colorPickers-label"
+            >Paragraph Text</label
+          >
+        </div>
+
+        <div class="colorPicker-box">
+          <input type="color" id="colorPicker5" class="colorPickers" />
+          <label for="colorPicker5" class="colorPickers-label"
+            >Navigation Background</label
+          >
+        </div>
+
+        <div class="colorPicker-box">
+          <input type="color" id="colorPicker6" class="colorPickers" />
+          <label for="colorPicker6" class="colorPickers-label"
+            >Secondary Text</label
+          >
+        </div>
+      </div>
+    </section>
+
+    <header id="header">
+      <h1 class="container">OrganisationX</h1>
+    </header>
+
+    <nav>
+      <ul class="container">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="container row">
+      <section class="left-section">
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo,
+          elit vel posuere lobortis, erat mi ultrices diam, eu euismod nunc odio
+          eget augue. Soluta, reprehenderit accusamus!
+          <a href="#">Aperiam</a> sit iusto ducimus totam, est ipsa laborum
+          fugit doloribus labore <a href="#">corrupti</a> mollitia voluptas
+          fuga, iure, necessitatibus culpa ab?
+        </p>
+        <div class="row">
+          <div class="paragraph-column-1"><p>Lorem</p></div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              recusandae adipisci architecto expedita itaque necessitatibus,
+              molestias sequi obcaecati omnis eius, animi, officiis ullam facere
+              tempore provident distinctio quaerat laboriosam inventore.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="paragraph-column-1"><p>Ipsum</p></div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              recusandae adipisci architecto expedita itaque necessitatibus,
+              molestias sequi obcaecati omnis eius, animi, officiis ullam facere
+              tempore provident distinctio quaerat laboriosam inventore.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <p class="paragraph-column-1">Dolor</p>
+          <div>
+            <p>Nostrum recusandae adipisci architecto</p>
+            <div>
+              <ul class="button-items">
+                <li>
+                  <button>Lorem ipsum</button>
+                </li>
+                <li>
+                  <button>dolor sit</button>
+                </li>
+                <!-- <li>
+                <button>
+                  consectetur adipisicing
+                </button>
+              </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="right-section">
+        <div>
+          <h2>Our Services</h2>
+          <div class="row">
+            <div class="img-box">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0104/8100/8691/products/5170-2027_Sunflower-Sunsations-F1-Yellow_300x300.jpg?v=1617190680"
+                alt=""
+              />
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              commodo, elit vel posuere lobortis, erat mi ultrices diam, eu
+              euismod nunc odio eget augue. Sed commodo, elit vel posuere
+              lobortis, erat mi ultrices diam, eu euismod nunc odio eget augue.
+              <a href="#">magis...</a>
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h2>More Services</h2>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              commodo, elit vel posuere lobortis, erat mi ultrices diam, eu
+              euismod nunc odio eget augue.
+            </p>
+          </div>
+          <ul class="button-items">
+            <li><button>nunc odio</button></li>
+            <li><button>vel posuere</button></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Specialised</h2>
+          <div class="row">
+            <div class="img-box">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0104/8100/8691/products/5170-2027_Sunflower-Sunsations-F1-Yellow_300x300.jpg?v=1617190680"
+                alt=""
+              />
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                commodo, elit vel posuere lobortis, erat mi ultrices diam, eu
+                euismod nunc odio eget augue. Sed commodo, elit vel posuere
+                lobortis, erat mi ultrices diam, eu euismod nunc odio eget
+                augue.
+                <a href="#">magis...</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright © 2023</p>
+    </footer>
+
+    <section id="section-footer" style="display: none">
+      <a href="#section-top">
+        <button id="color-picker-open" style="display: block; margin: auto">
+          Open Colour Scheme Mate
+        </button>
+      </a>
+    </section>
+
+    <!-- <script src="color-changer.js"></> -->
+    <script type="module" src="js/color-changer.js"></script>
+    <!-- jsPDF -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
+      integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/"
+      crossorigin="anonymous"
+    >
+      // console.log("saving...");
+      //         var doc = new jsPDF()
+
+      //   doc.text('Hello world!', 10, 10)
+      //   doc.save('a4.pdf')
+    </script>
+    <!-- FileSaver.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+
+#color0 {
+  background-color: red;
+}
+
+#color1 {
+  background-color: blue;
+}
+
+#color2 {
+  background-color: rgb(242, 0, 255);
+}
+
+#color3 {
+  background-color: rgb(0, 255, 76);
+}
+
+#color4 {
+  background-color: rgb(225, 255, 0);
+}
+
+
+#colorBox {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+}
+
+
+.color-inputs {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 10px 20px;
+}
+
+.colorPicker-box {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  /*! align-items: center; */justify-content: flex-start;
+  /*! flex-direction: row; */align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.colorPickers {
+  width: 100px;
+  height: 60px;
+  border-top-style: solid;
+  margin: 10px 0;
+}
+
+.colorPickers-label {
+  color: var(--color-text-fade);
+
+}
+
+/* #colorPicker1 { */
+  /*! border-top-width: 5px; */
+  /*! border-bottom-width: 2px; */
+  /*! border-bottom-style: solid; */
+/* } */
+
+
+
+
+
+.color-changer-section {
+  min-height: 10vh;
+  background-color: rgb(255, 255, 255);
+
+  display: flex;
+  justify-content: center; /* centers items horizontally */
+  align-items: center; /* centers items vertically */
+}
+
+.color-changer-section ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.color-changer-section li {
+  margin: 0 10px; /* adds spacing between items */
+  padding: 10px;
+}
+
+.colorschememate-btns {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+
+.colorschememate-btn-img {
+  width: 30px;
+  height: 30px;
+    border: 2px solid white;
+    border-radius: 5px;
+  
+    background-color: rgb(172, 210, 244);
+    opacity: 0.5;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  
+  .colorschememate-btn-img:hover {
+    background-color: white;
+    opacity: 1;
+  }
+
+  .colorschememate-btn-img img{
+  
+    border-style: none;
+    width: 100%;
+    height: auto;
+    /* background-color: aliceblue; */
+  }
+
+  #overlay {
+    display: none;
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 70%;
+  transform: translate(-50%, -50%);
+
+  background-color: rgba(0, 0, 0, 0.9); /* set the background color to a darker shade of black */
+  /* background-color: rgba(0, 0, 0, 1); */
+
+  opacity: 0.9; /* set the opacity to a value between 0 and 1 */
+  z-index: 9999; /* set the z-index to a high value to ensure it appears on top of other elements */
+  padding: 20px; /* add some padding to the div */
+  color: white; /* set the text color to white to ensure it's visible against the dark background */
+  }
+
+  #color-picker-info-close {
+    display: block;
+    margin: 50px auto;
+    padding: 2rem;
+    font-size: 1.5rem;
+  }   
+
+  .info-panels {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    height: 40vh;
+    align-items: flex-start;
+  }   
+
+  .info-panel {
+    width: 100%;
+    padding: 20px;
+  }
+
+

@@ -1,0 +1,211 @@
+:root {
+	/* Color Theme Swatches in Hex */
+	--Orange-Brown-Grey1-1-hex: #8C6D51; 
+	--Orange-Brown-Grey1-2-hex: #592B02; 
+	--Orange-Brown-Grey1-3-hex: #F27405; 
+	--Orange-Brown-Grey1-4-hex: #262626; 
+	--Orange-Brown-Grey1-5-hex: #67615c; 
+  
+	
+	/* SCHEME: --Orange-Brown-Grey1-2-hex */
+	--color-primary: #592B02; /* color-bg-header */
+	--color-scheme1: #8C6D51; /* color-h1 */
+	--color-scheme2: #F27405; /* color-h2 */
+	--color-scheme3: #262626; /* color-bg-page */
+	--color-scheme4: #9ca5a1; /* color-text */
+	
+	/* EXTRA COLOUR SCHEME */
+		--color-background2: #000000;
+		--color-text-fade: #67615c;
+}
+
+
+
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+body {
+	background-color: var(--color-scheme3);
+	color: var(--color-scheme4);
+}
+
+/* Style the header */
+header {
+	background-color: var(--color-primary);
+	color: var(--color-scheme4);
+	padding: 20px;
+}
+
+h1 {
+	color: var(--color-scheme1);
+	font-size: 2rem;
+}
+h2 {
+	color: var(--color-scheme2);
+}
+
+/* Style the navigation menu */
+nav {
+	background-color: var(--color-background2);
+	padding: 10px 0;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+	/* margin: auto; */
+}
+
+nav a, a {
+	color: var(--color-scheme2);
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: var(--color-background2);
+	background-color: var(--color-scheme2);
+	padding: 5px;
+}
+
+ul {
+	justify-content: space-around;
+	list-style-type: none;
+	margin: 0;
+	/* padding: 0; */
+	padding-left: 0px;
+}
+
+
+
+.row {
+	display: flex;
+	/* justify-content: space-around; */
+	align-content: flex-start;
+}
+
+div.row:nth-child(5) > div:nth-child(2) {
+	width: 100%;
+}
+
+
+button {
+	background-color: var(--color-scheme2);
+	color: var(--color-scheme3);
+	margin-bottom: 10px;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px rgb(54, 54, 54);
+}
+
+button:hover {
+	background-color: var(--color-scheme3);
+  color: var(--color-scheme4);
+}
+
+.button-items {
+	display: flex;
+	/* gap: 10px; */
+	justify-content: space-around;
+	/* margin: 0; */
+}
+
+.img-box {
+width: 400px;
+  height: auto;
+  /* border: #23c717 1px solid; */
+  /* border-radius: 50%; */
+  overflow: hidden; 
+
+  margin-right: 20px;
+  /* padding: 50px; */
+  /* padding-top: 80px; */
+}
+
+.img-box img {
+  width: 100%; /* Make sure the image fills the container */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+}
+
+/* Style the main content area */
+main {
+  min-height: 70vh;
+	display: flex;
+	flex-grow: 1;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px;
+	/* border: 1px solid #ccc; */
+}
+
+
+.left-section, .right-section{
+	/* flex-basis: calc(50% - 5px); */
+	flex-basis: 45%;
+	margin: 0 10px;
+}
+
+.left-section {
+	border-right: solid 0.5px orange;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+
+.paragraph-column-1 {
+margin-right: 30px;
+color: var(--color-scheme2);
+}
+
+.more-link {
+text-align: right;
+}
+
+/* Style the footer */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+.slide-in {
+  opacity: 0; /* Set initial opacity to 0 */
+  transform: translateY(0px); /* Set initial position off-screen */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Add transition effects */
+}
+
+.slide-in.show {
+  opacity: 1; /* Set opacity to 1 when element becomes visible */
+  transform: translateY(0); /* Slide element into position */
+}
+
+
+/* Media query for smaller viewports */
+@media screen and (max-width: 1230px) {
+  .left-section, .right-section {
+    flex-basis: 100%; /* This sets each section to take up 100% of the available width when the viewport is smaller */
+  }
+	.left-section {
+		border-right: solid 0 orange;
+		
+	}
+}
+
+@media screen and (min-width: 1300px) {
+  
+	.left-section {
+		border-right: solid 0 orange;
+		
+	}
+}
